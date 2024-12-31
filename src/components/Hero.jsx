@@ -1,14 +1,20 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import "./../styles/Hero.css";
+
+// Import images
+import yogaImage from "../assets/images/yoga.webp";
+import yogaImage1 from "../assets/images/yoga1.png";
+import yogaImage2 from "../assets/images/yoga2.jpeg";
+import yogaImage3 from "../assets/images/yoga5.webp";
 
 function Hero() {
   const [currentImage, setCurrentImage] = useState(0);
 
   const images = [
-    { url: "src/assets/yoga.webp" }, // Add your first image
-    { url: "src/assets/yoga1.png" }, // Add your second image
-    { url: "src/assets/yoga2.jpeg" }, // Add your third image
-    { url: "src/assets/yoga5.webp" }, // Add your fourth image
+    { url: yogaImage }, // First image
+    { url: yogaImage1 }, // Second image
+    { url: yogaImage2 }, // Third image
+    { url: yogaImage3 }, // Fourth image
   ];
 
   const colors = ["#a8eb0c", "#e70b54", "#09b2e1", "#ffeb3b"]; // Colors for h2 corresponding to the images

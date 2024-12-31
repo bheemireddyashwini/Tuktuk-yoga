@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./../styles/Header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+
+// Importing the logo image
+import logo from "../assets/images/pic4.jpg"; // Update the path to point to the correct location
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +15,7 @@ function Header() {
   return (
     <header>
       <div className="logo-container">
-        <img src="src/assets/pic4.jpg" alt="TUK TUK yoga Logo" />
+        <img src={logo} alt="TUK TUK Yoga Logo" /> {/* Using imported logo image */}
         <h1>TUKTUK Yoga</h1>
       </div>
 
