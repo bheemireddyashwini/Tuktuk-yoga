@@ -2,6 +2,10 @@ import React from "react";
 import "./../styles/PriceDetails.css"; // Ensure you have the corresponding styles for this component
 
 const PriceDetails = () => {
+
+  const ScrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section className="price-details" id="price">
       <h2> Yoga Course Details</h2>
@@ -39,6 +43,9 @@ const PriceDetails = () => {
         </ul>
         <button className="subscribe-btn disabled" disabled>Coming Soon</button>
       </div>
+      <button className="explore-button" onClick={() => ScrollToSection("contact")}>
+        Explore Contact-Details 
+      </button>
       
     </section>
   );

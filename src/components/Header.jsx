@@ -10,21 +10,19 @@ function Header() {
   };
 
   return (
-    <header>
+    <header className={isOpen ? "header-relative" : "header-fixed"}>
       <div className="logo-container">
-        <img src="pic4.jpg" alt="TUK TUK Yoga Logo" /> {/* Updated path to public folder */}
+        <img src="pic4.jpg" alt="TUK TUK Yoga Logo" />
         <h1>TUKTUK Yoga</h1>
       </div>
 
-      {/* Burger menu button */}
       <button
-        className={`burger-menu-btn ${isOpen ? "clicked" : ""}`} // Add clicked class when open
+        className={`burger-menu-btn ${isOpen ? "clicked" : ""}`}
         onClick={toggleMenu}
       >
         <GiHamburgerMenu />
       </button>
 
-      {/* Navigation */}
       <nav className={isOpen ? "nav-open" : ""}>
         <ul>
           <li>

@@ -16,6 +16,45 @@
   text-align: center;
 }
 
+
+
+/* Center the explore button */
+.content {
+  text-align: center; /* Center align all content inside */
+}
+
+.explore-button {
+  background-color: #082904;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  display: inline-block; /* Ensure the button respects text alignment */
+}
+
+.explore-button:hover {
+  background-color: #bbba6b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .explore-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .explore-button {
+    width: auto; /* Maintain auto width on smaller screens */
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
 .pricing-card {
   background-color: #1e3f2d;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 223, 0, 0.6); /* Sleek modern shadow effect */
@@ -27,6 +66,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #f5ecec;
 }
+
+
+
 
 .pricing-card:hover {
   transform: translateY(-5px); /* Lift card slightly on hover */
@@ -43,6 +85,13 @@
   font-weight: bold;
   margin: 20px 0;
   color: #e91414;
+
+}
+#price{
+  max-width: 1200px;
+  margin: 0 auto;
+
+
 }
 
 .pricing-card ul {

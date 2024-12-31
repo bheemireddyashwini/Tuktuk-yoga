@@ -1,6 +1,11 @@
 import "./../styles/Gallery.css";
 
 function Gallery() {
+
+
+  const ScrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="content" id="gallery">
       <h2>Gallery</h2>
@@ -14,6 +19,9 @@ function Gallery() {
         <img src="pic7.jpg" alt="Yoga practice" />
         <img src="pic8.jpg" alt="Yoga practice" />
       </div>
+      <button className="explore-button" onClick={() => ScrollToSection("price")}>
+        Explore PriceDetails
+      </button>
     </div>
   );
 }

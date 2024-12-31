@@ -7,11 +7,16 @@
   justify-items: center; /* Center images within the grid */
   grid-auto-rows: minmax(
     250px,
-    350px
+    380px
   ); /* Flexible height for consistent rows */
   transition: all 0.3s ease;
-  background-color: #f9f9f9; /* Light background */
-  border-radius: 20px; /* Smooth rounded corners for container */
+  background-color: #fce3ae; /* Light background */
+  border-radius: 10px; /* Smooth rounded corners for container */
+}
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 h2 {
@@ -25,16 +30,55 @@ h2 {
   font-weight: bold;
 }
 
+ /* Center the explore button */
+.content {
+  text-align: center; /* Center align all content inside */
+}
+
+.explore-button {
+  background-color: #082904;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  display: inline-block; /* Ensure the button respects text alignment */
+}
+
+.explore-button:hover {
+  background-color: #bbba6b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .explore-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .explore-button {
+    width: auto; /* Maintain auto width on smaller screens */
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+
 /* Individual Images */
 .gallery img {
-  width: 100%;
+  width: 98%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 20px; /* Rounded corners for images */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 10px 20px rgba(219, 134, 134, 0.1); /* Soft shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   filter: grayscale(60%); /* Initial grayscale effect */
+ 
 }
 
 /* Hover Effect - Modern Look */
