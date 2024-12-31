@@ -1,0 +1,162 @@
+/* Resetting basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f5f5f5;
+}
+
+/* About page container */
+.about-page {
+  text-align: center; /* Centering content */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #fd604b;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+h3{
+  font-size: 1.1rem;
+  color: #fd604b;
+  margin-bottom: 30px;
+ 
+  letter-spacing: 0.2px;
+  margin-top: 30px;
+}
+.about-description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify; /* Justifying the text */
+  margin: 20px auto;
+  max-width: 800px; /* Adding some constraint on width */
+}
+
+.yoga-styles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px;
+  margin-top: 40px;
+  transition: all 0.3s ease;
+}
+
+.style-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1), 0 0 10px rgba(218, 165, 32, 0.5); /* Gold shadow effect */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: 1px solid rgba(218, 165, 32, 0.4); /* Subtle gold border */
+  width: calc(100% + 10%); /* Increase width slightly */
+  height: auto; /* Let the content adjust the height dynamically */
+}
+
+.style-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 0 15px rgba(218, 165, 32, 0.8); /* Enhanced shadow on hover */
+  transform: translateY(-5px); /* Slight hover effect */
+}
+
+.style-name {
+  font-size: 1.8rem;
+  color: #57a013d5;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.style-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #555;
+  text-align: center;
+}
+
+.asana-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.asana-list li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.explore-button {
+  background-color: #082904;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.explore-button:hover {
+  background-color: #bbba6b;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .yoga-styles {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+  }
+
+  .yoga-styles {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+
+  .style-card {
+    width: 100%;
+  }
+
+  .explore-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .yoga-styles {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+
+  .style-card {
+    width: 100%;
+  }
+
+  .explore-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

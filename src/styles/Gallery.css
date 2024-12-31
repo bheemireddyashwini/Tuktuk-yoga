@@ -1,0 +1,109 @@
+/* General Container Style */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+  gap: 1.5rem; /* Slight gap between images */
+  padding: 2rem;
+  justify-items: center; /* Center images within the grid */
+  grid-auto-rows: minmax(250px, 350px); /* Flexible height for consistent rows */
+  transition: all 0.3s ease;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 20px; /* Smooth rounded corners for container */
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 2.6rem;
+  color: #fd604b;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+/* Individual Images */
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px; /* Rounded corners for images */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  filter: grayscale(60%); /* Initial grayscale effect */
+}
+
+/* Hover Effect - Modern Look */
+.gallery img:hover {
+  transform: scale(1.05); /* Slight scaling */
+  filter: grayscale(0%); /* Remove grayscale effect on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: rotate(4deg); /* Rotation effect */
+}
+
+/* Fade-in Animation for Images */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply fade-in animation */
+.gallery img {
+  animation: fadeInScale 0.8s ease-out forwards;
+}
+
+/* Responsiveness: Tablet Layout (2 Columns) */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    gap: 1rem; /* Smaller gap between images */
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Responsiveness: Mobile Layout (425px and below) */
+@media (max-width: 425px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+    gap: 0.3rem; /* Minimal gap for mobile */
+    padding: 1rem; /* Less padding */
+  }
+
+  .gallery img {
+    height: 450px; /* Fixed height for images on mobile */
+    border-radius: 12px; /* Slightly smaller rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsiveness: Small Mobile Layout (375px and below) */
+@media (max-width: 375px) {
+  .gallery {
+    gap: 0.2rem; /* Very minimal gap for small screens */
+    padding: 0.5rem; /* Tight padding */
+  }
+
+  .gallery img {
+    height: 390px; /* Smaller height for very small screens */
+    border-radius: 10px; /* Slightly smaller border radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+
+  h2 {
+    font-size: 1.6rem; /* Further smaller font size */
+  }
+}

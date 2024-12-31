@@ -1,0 +1,133 @@
+header {
+  background-color: #1e3a3a; /* Keep the existing color */
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: auto;
+  border-radius: 50%;
+  max-width: 60px;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+  font-family: "Brush Script MT", cursive;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.burger-menu-btn {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* When burger menu is clicked, change background color */
+.burger-menu-btn.clicked {
+  background-color: #1e3a3a; /* Dark green when clicked */
+}
+
+/* Remove default focus/active styling to prevent blue background */
+.burger-menu-btn:focus,
+.burger-menu-btn:active {
+  outline: none;
+  background-color: #1e3a3a !important; /* Force the background to dark green */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .burger-menu-btn {
+    display: block; /* Show burger menu on small screens */
+  }
+
+  nav {
+    display: none; /* Hide nav by default */
+    width: 100%;
+  }
+
+  nav.nav-open {
+    display: block; /* Show nav when burger menu is open */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack the nav items vertically */
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin-right: 0;
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  header img {
+    max-width: 50px; /* Adjust image size on very small screens */
+    margin-top: 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem; /* Adjust font size for very small screens */
+  }
+}
+
+@media (max-width: 375px) {
+  /* Ensure that background color is consistent on 375px screens */
+  .burger-menu-btn {
+    background-color: transparent; /* Reset background color to transparent */
+  }
+
+  .burger-menu-btn.clicked {
+    background-color: #1e3a3a; /* Apply dark green on click */
+  }
+}

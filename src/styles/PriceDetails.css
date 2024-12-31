@@ -1,0 +1,118 @@
+.price-details {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-evenly; /* Align cards horizontally */
+  flex-wrap: wrap; /* Allows the cards to wrap to the next row on smaller screens */
+  gap: 10px; /* Reduced space between the cards */
+}
+
+.price-details h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fd604b;
+  width: 100%; /* Ensure the title takes the full width */
+  text-align: center;
+}
+
+.pricing-card {
+  background-color: #1e3f2d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 223, 0, 0.6); /* Sleek modern shadow effect */
+  border-radius: 12px; /* Slightly rounded corners */
+  padding: 30px;
+  width: 30%; /* Adjust card width */
+  max-width: 350px; /* Restrict card width */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #f5ecec;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px); /* Lift card slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 223, 0, 0.8); /* Enhanced modern shadow */
+}
+
+.pricing-card h3 {
+  font-size: 1.8rem;
+  color: hsl(180, 23%, 91%);
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #e91414;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-card ul li {
+  margin: 10px 0;
+}
+
+.subscribe-btn {
+  background-color: #e91414;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #df4f16;
+}
+
+/* Styling for the Coming Soon Cards */
+.coming-soon {
+  background-color: #333;
+  border: 2px dashed #cccccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 223, 0, 0.6); /* Consistent with other cards */
+}
+
+.coming-soon:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 223, 0, 0.8); /* Lifted modern shadow */
+}
+
+.coming-soon h3 {
+  color: #999;
+}
+
+.coming-soon .price {
+  color: #999;
+  font-weight: normal;
+}
+
+.coming-soon .subscribe-btn {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.coming-soon .subscribe-btn:hover {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.coming-soon p {
+  font-style: italic;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .pricing-card {
+    width: 45%; /* Adjust card width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-card {
+    width: 100%; /* Stack the cards vertically on very small screens */
+  }
+}

@@ -1,0 +1,151 @@
+/* General styles for the footer */
+footer {
+  background-color: #1e3a3a;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'TIMES NEW ROMAN', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center all sections horizontally */
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  width: 32%;
+  margin-bottom: 20px;
+  text-align: center; /* Center text content */
+}
+
+.footer-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #fc9497;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; /* Center heading content */
+  align-items: center;
+}
+
+.footer-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #fc9497;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; /* Center heading content */
+  align-items: center;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.footer-section.address p {
+  font-size: 1.1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Center social media icons */
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+/* Copyright Section */
+.footer-section.copyright {
+  text-align: center;
+  font-size: 1rem;
+  color: #ddd;
+  margin-top: 20px;
+}
+
+.footer-section.copyright p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-section h2,
+  .footer-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-section.address h2,
+  .footer-section.address p {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center; /* Ensure icons are centered on smaller screens */
+  }
+
+  .social-icons a img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer-section p {
+    font-size: 1rem;
+  }
+
+  .footer-section.copyright p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section p {
+    font-size: 0.9rem;
+  }
+
+  .footer-section h2,
+  .footer-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-section.address h2,
+  .footer-section.address p {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center; /* Maintain centering */
+  }
+
+  .social-icons a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-section.copyright p {
+    font-size: 0.85rem;
+  }
+}
