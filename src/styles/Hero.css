@@ -106,15 +106,16 @@ html {
 
 @media (max-width: 375px) {
   .hero {
-    height: 80vh; /* Further reduce height for very small screens */
+    height: 40vh; /* Further reduce height for very small screens */
     padding: 10px; /* Add padding for better alignment */
-    margin-top: 280px;
+    ;
   }
 
   .hero h2 {
     font-size: 1.5rem;
     line-height: 1.2;
-    margin-top: 250px;
+    margin-top: 200px;
+
   }
 
   .hero button {
