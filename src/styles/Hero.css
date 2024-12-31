@@ -114,7 +114,7 @@ html {
 
 @media (max-width: 375px) {
   .hero {
-    height: 60vh; /* Further reduce height for very small screens */
+    height: 100vh; /* Further reduce height for very small screens */
     padding: 10px; /* Add padding for better alignment */
     margin-top: 0;
   }
