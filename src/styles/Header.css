@@ -134,4 +134,5 @@ color: yellow;
   .burger-menu-btn.clicked {
     background-color: #1e3a3a; /* Apply dark green on click */
   }
+
 }

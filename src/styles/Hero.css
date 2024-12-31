@@ -108,6 +108,7 @@ html {
   .hero {
     height: 30vh; /* Further reduce height for very small screens */
     padding: 10px; /* Add padding for better alignment */
+    margin-top: 80px;
   }
 
   .hero h2 {
