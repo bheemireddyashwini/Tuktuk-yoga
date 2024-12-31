@@ -5,7 +5,10 @@
   gap: 1.5rem; /* Slight gap between images */
   padding: 2rem;
   justify-items: center; /* Center images within the grid */
-  grid-auto-rows: minmax(250px, 350px); /* Flexible height for consistent rows */
+  grid-auto-rows: minmax(
+    250px,
+    350px
+  ); /* Flexible height for consistent rows */
   transition: all 0.3s ease;
   background-color: #f9f9f9; /* Light background */
   border-radius: 20px; /* Smooth rounded corners for container */
@@ -17,7 +20,7 @@ h2 {
   color: #fd604b;
   margin-bottom: 2rem;
   text-align: center;
-  text-transform: uppercase;
+
   letter-spacing: 1.5px;
   font-weight: bold;
 }

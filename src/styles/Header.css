@@ -32,6 +32,10 @@ header h1 {
   font-family: "Brush Script MT", cursive;
   font-size: 2rem;
 }
+header h1:hover {
+  color: rgb(199, 216, 48);
+  text-decoration: none;
+}
 
 nav ul {
   list-style: none;
@@ -50,7 +54,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+color: yellow;
 }
 
 .burger-menu-btn {
