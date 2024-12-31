@@ -8,7 +8,7 @@ const PriceDetails = () => {
   };
   return (
     <section className="price-details" id="price">
-      <h2> Yoga Course Details</h2>
+      <h2> Price Details</h2>
       
       {/* First card with full course details */}
       <div className="pricing-card">
