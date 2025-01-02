@@ -129,6 +129,7 @@ footer {
   .footer-section h2,
   .footer-section h3 {
     font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .footer-section.address h2,

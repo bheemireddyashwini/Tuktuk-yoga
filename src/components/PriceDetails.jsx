@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./../styles/PriceDetails.css"; // Ensure you have the corresponding styles for this component
 
 const PriceDetails = () => {

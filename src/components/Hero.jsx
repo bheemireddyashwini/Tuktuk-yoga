@@ -1,10 +1,9 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./../styles/Hero.css";
 
 // Import images
 import yogaImage from "../assets/images/yoga.webp";
 import yogaImage1 from "../assets/images/yoga1.png";
-import yogaImage2 from "../assets/images/yoga2.jpeg";
 import yogaImage3 from "../assets/images/yoga5.webp";
 
 function Hero() {
@@ -13,7 +12,6 @@ function Hero() {
   const images = [
     { url: yogaImage }, // First image
     { url: yogaImage1 }, // Second image
-    { url: yogaImage2 }, // Third image
     { url: yogaImage3 }, // Fourth image
   ];
 
@@ -50,7 +48,13 @@ function Hero() {
           Find Your Inner Peace with <br />
           TUKTUK Yoga
         </h2>
-        <button onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}>
+        <button
+          onClick={() =>
+            document
+              .getElementById("about")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        >
           Learn More
         </button>
       </div>
